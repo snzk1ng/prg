@@ -4,15 +4,21 @@ public class Ticket {
 
 	
 	private int numeroTicket;
-	private int fecha;
+	private String fecha;
 	private double precioUnitario;
 	
 	
-	public Ticket(int numeroTicket, int fecha, double precioUnitario) {
+	public Ticket(int numeroTicket, String fecha, double precioUnitario) {
 		
 		this.numeroTicket = numeroTicket;
 		this.fecha = fecha;
 		this.precioUnitario = precioUnitario;
+	}
+
+
+	public Ticket(int numeroTicket, String fecha) {
+		this.numeroTicket = numeroTicket;
+		this.fecha = fecha;
 	}
 
 
@@ -26,12 +32,12 @@ public class Ticket {
 	}
 
 
-	public int getFecha() {
+	public String getFecha() {
 		return fecha;
 	}
 
 
-	public void setFecha(int fecha) {
+	public void setFecha(String fecha) {
 		this.fecha = fecha;
 	}
 
