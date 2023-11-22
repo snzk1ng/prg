@@ -10,9 +10,9 @@ public class Principal {
 		int boton;
 		int cero = 0;
 		int numDec;
+		int numPremiado=0;
 		
-		
-		Sorteo s = new Sorteo();
+		Sorteo s = new Sorteo(numPremiado);
 		
 
 		System.out.println("Bienvenido al programa donde mostramos un decimo y mostramos el ganador");
