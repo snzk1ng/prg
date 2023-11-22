@@ -5,14 +5,14 @@ public class Ticket {
 	
 	private int numeroTicket;
 	private int fecha;
-	private double precioViaje;
+	private double precioUnitario;
 	
 	
-	public Ticket(int numeroTicket, int fecha, double precioViaje) {
+	public Ticket(int numeroTicket, int fecha, double precioUnitario) {
 		
 		this.numeroTicket = numeroTicket;
 		this.fecha = fecha;
-		this.precioViaje = precioViaje;
+		this.precioUnitario = precioUnitario;
 	}
 
 
@@ -36,23 +36,23 @@ public class Ticket {
 	}
 
 
-	public double getPrecioViaje() {
-		return precioViaje;
+	public double getprecioUnitario() {
+		return precioUnitario;
 	}
 
 
-	public void setPrecioViaje(double precioViaje) {
-		this.precioViaje = precioViaje;
+	public void setprecioUnitario(double precioUnitario) {
+		this.precioUnitario = precioUnitario;
 	}
 
 
 	@Override
 	public String toString() {
-		return "Ticket [numeroTicket=" + numeroTicket + ", fecha=" + fecha + ", precioViaje=" + precioViaje + "]";
+		return "Ticket [numeroTicket=" + numeroTicket + ", fecha=" + fecha + ", precioUnitario=" + precioUnitario + "]";
 	}
 	
 	
-		
+	
 		
 		
 		
