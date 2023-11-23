@@ -6,7 +6,8 @@ public class Maquina {
 
 	private Ticket ticket;
 	private String fecha;
-	private String contrasenha;
+	private String contrasenha="a";
+	private double dineroIngresado;
 	
 	public Maquina(Ticket ticket, String fecha, String contrasenha) {
 		this.ticket = ticket;
@@ -59,7 +60,8 @@ public class Maquina {
 	public boolean comprobarContra(String contrasenha) {
 		
 		
-		if(contrasenha.equalsIgnoreCase(getContrasenha())){
+		
+		if(contrasenha.equals(getContrasenha())){
 			return true;
 		}
 		else {
@@ -69,17 +71,19 @@ public class Maquina {
 	}
 	
 	
-	
-	public void mostrarContra(boolean correcto) {
+	public void mostrarContra (String contrasenha) {
 		
-		if(correcto) {
+		if(comprobarContra(contrasenha)) {
 			System.out.println("Contraseña correcta");
 		}
-		else {
-			System.out.println("Contraseña incorrecta");
-		}
 		
+		else {
+			System.out.println("Incorrecta");
+		}
 	}
+	
+		
+	
 	
 	public double calcularTicket() {
 		double precio;
@@ -100,11 +104,28 @@ public class Maquina {
 		
 		
 	}
+	
+	public double calcularDineroDia(double suma) {
+		
+		
+		
+		dineroIngresado+=suma;
+		return dineroIngresado;
+	}
 
 
-
+	public void mostrarDineroDia() {
+		
+		System.out.println("El dinero generado por la maquina en un dia es de: "+dineroIngresado);
+		
+	}
 	
 	
+	public void resetearDinero() {
+		
+		dineroIngresado=0;
+		
+	}
 	
 	
 }

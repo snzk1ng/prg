@@ -23,6 +23,10 @@ public class Ticket {
 
 
 	
+	public Ticket() {
+	}
+
+
 	public Ticket(double precioUnitario) {
 		this.precioUnitario = precioUnitario;
 	}
