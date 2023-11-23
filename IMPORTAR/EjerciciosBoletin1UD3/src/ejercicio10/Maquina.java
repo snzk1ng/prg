@@ -56,10 +56,10 @@ public class Maquina {
 		return "Maquina [ticket=" + ticket + ", fecha=" + fecha + ", contrasenha=" + contrasenha + "]";
 	}
 	
-	public boolean contra(String contrasenha) {
+	public boolean comprobarContra(String contrasenha) {
 		
 		
-		if(contrasenha==getContrasenha()) {
+		if(contrasenha.equalsIgnoreCase(getContrasenha())){
 			return true;
 		}
 		else {
@@ -74,6 +74,9 @@ public class Maquina {
 		
 		if(correcto) {
 			System.out.println("Contraseña correcta");
+		}
+		else {
+			System.out.println("Contraseña incorrecta");
 		}
 		
 	}
@@ -97,6 +100,11 @@ public class Maquina {
 		
 		
 	}
+
+
+
+	
+	
 	
 	
 }

@@ -22,6 +22,12 @@ public class Ticket {
 	}
 
 
+	
+	public Ticket(double precioUnitario) {
+		this.precioUnitario = precioUnitario;
+	}
+
+
 	public int getNumeroTicket() {
 		return numeroTicket;
 	}
