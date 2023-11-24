@@ -149,10 +149,6 @@ public class Principal {
 			
 		
 		while(boton!=cero);
-			
-		
-		
-		
 	
 		}
 		
