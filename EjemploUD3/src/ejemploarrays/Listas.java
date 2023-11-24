@@ -1,4 +1,4 @@
-package ejemplousodearrays;
+package ejemploarrays;
 
 import java.util.Random;
 
