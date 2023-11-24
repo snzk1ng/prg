@@ -53,15 +53,25 @@ public class Principal {
 			
 			System.out.println("Con cuanto va a pagar");
 			cambio=Leer.datoDouble();
+			
+			if(cambio<maq.calcularTicket()) {
+				System.out.println("Esta introduciendo una cantidad menor");
+			}
+			else {
+				System.out.println("");
+			}
+			
 			do {
 				
 			
 			System.out.println("Pulse 1 ahora si quiere que le muestre el cambio a devolver");
-			System.out.println("*********************************************************");
+			System.out.println("");
 			System.out.println("Pulse 2 para mostrar para cuantas personas es valido");
+			System.out.println("");
 			System.out.println("Pulse 0 para salir");
 			boton=Leer.datoInt();
 			System.out.println(tic1.toString());
+			System.out.println("");
 			
 			switch(boton) {
 			
@@ -69,9 +79,11 @@ public class Principal {
 					
 					maq.calcularCambio(cambio);
 					System.out.println("el cambio que se le aplica es de: "+ maq.calcularCambio(cambio));
+					System.out.println("");
 					break;
 				case 2:
 					System.out.printf("el ticket es valido para %d personas\n",numBilletes);
+					System.out.println("");
 					break;
 					
 					
@@ -113,6 +125,7 @@ public class Principal {
 						break;
 						case 4:
 						System.out.println("Diga el precio nuevo del billete");
+						System.out.println("");
 						precioNuevo=Leer.datoDouble();
 						tic2=new Ticket();
 						tic2.setprecioUnitario(precio);
