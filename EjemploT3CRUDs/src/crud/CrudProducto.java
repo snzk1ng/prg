@@ -67,6 +67,9 @@ public class CrudProducto {
 		int index = findProduct(p);//Devuelve el índice del array donde se encuentra el producto
 		if (index >= 0)
 			lista[index].setActivo(false);
+		/* pAux = lista[index];
+		pAux.setActivo(false);
+		lista[index]=pAux;*/
 	}
 	
 	/*Buscar producto por código id y devuelve el producto buscado completo*/

@@ -1,4 +1,4 @@
-package gestion;
+ package gestion;
 
 import model.Producto;
 

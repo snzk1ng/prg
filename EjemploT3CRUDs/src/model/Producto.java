@@ -13,6 +13,13 @@ public class Producto {
 		this.precioUnitario = precioUnitario;
 		this.activo=activo;
 	}
+	
+	
+
+	public Producto() {
+	}
+
+
 
 	public String getCodigo() {
 		return codigo;
