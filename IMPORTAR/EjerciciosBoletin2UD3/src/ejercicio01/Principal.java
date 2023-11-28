@@ -12,10 +12,12 @@ public class Principal {
 		int boton;
 		int cero=0;
 		int fragil;
+		int contador=0;
 		double ganancias;
 		double precioFabrica;
 		double precioCoste;
 		double precioProductoTransporte;
+		Producto prod;
 		Producto p = new Producto();
 		Tienda t = new Tienda();
 		
@@ -54,7 +56,10 @@ public class Principal {
 				precioCoste=Leer.datoDouble();
 				p.setPrecioCoste(precioCoste);
 				
-				t.añadirProducto(p);
+				prod = new Producto(precioFabrica,fragil,codigoProducto,precioCoste);
+				t.añadirProducto(prod,contador);
+				contador++;
+				
 				
 				
 				break;

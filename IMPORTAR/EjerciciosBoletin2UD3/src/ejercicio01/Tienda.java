@@ -72,10 +72,10 @@ public class Tienda {
 				+ gastosProductos + ", numeroProductos=" + numeroProductos + "]";
 	}
 	
-	public void añadirProducto(Producto p) {
+	public void añadirProducto(Producto p , int posicion) {
 		
-		lista[numeroProductos]=p;
-			numeroProductos++;
+		lista[posicion]=p;
+		
 	}
 	
 
@@ -119,9 +119,11 @@ public class Tienda {
 			return null;
 	}
 	
-	public double cantidadInvertidaProducto(String codigo) {
+	/*public double cantidadInvertidaProducto(String codigo) {
 		
-	}
+		
+		
+	}*/
 		
 }
 	
