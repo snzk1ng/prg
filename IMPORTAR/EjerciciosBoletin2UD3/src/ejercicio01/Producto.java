@@ -3,8 +3,8 @@ package ejercicio01;
 public class Producto {
 	
 	private double precioFabrica;
-	private boolean fragil;
-	private int codigoProd;
+	private int fragil;
+	private String codigoProd;
 	private double precioCoste;
 	
 	
@@ -13,10 +13,10 @@ public class Producto {
 	}
 
 
-	public Producto(double precioFabrica, boolean fragil, int codigoProd, double precioCoste) {
+	public Producto(double precioFabrica, int fragil, String codigoProd, double precioCoste) {
 		this.precioFabrica = precioFabrica;
 		this.fragil = fragil;
-		this.codigoProd = codigoProd;
+		this.codigoProd= codigoProd;
 		this.precioCoste = precioCoste;
 	}
 
@@ -31,22 +31,22 @@ public class Producto {
 	}
 
 
-	public boolean isFragil() {
+	public int isFragil() {
 		return fragil;
 	}
 
 
-	public void setFragil(boolean fragil) {
+	public void setFragil(int fragil) {
 		this.fragil = fragil;
 	}
 
 
-	public int getCodigoProd() {
+	public String getCodigoProd() {
 		return codigoProd;
 	}
 
 
-	public void setCodigoProd(int codigoProd) {
+	public void setCodigoProd(String codigoProd) {
 		this.codigoProd = codigoProd;
 	}
 
