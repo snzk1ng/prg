@@ -77,7 +77,7 @@ public class Tienda {
 		int cien=100;
 		double precioProductoTransporte;
 		
-		precioProductoTransporte=(get.precioCoste()*porciento)/cien;
+		precioProductoTransporte=(get .precioCoste()*porciento)/cien;
 		
 		return precioProductoTransporte;
 		
