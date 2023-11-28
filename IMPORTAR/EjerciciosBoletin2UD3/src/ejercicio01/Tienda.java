@@ -70,5 +70,25 @@ public class Tienda {
 	
 	}
 	
+
+	public double calcularPrecioTransporte(Producto precioCoste) {
+		
+		int porciento=12;
+		int cien=100;
+		double precioProductoTransporte;
+		
+		precioProductoTransporte=(get.precioCoste()*porciento)/cien;
+		
+		return precioProductoTransporte;
+		
+	}
+	
+	
+	public void calcularPrecioCoste() {
+		
+		
+	}
+	
+	
 	
 }

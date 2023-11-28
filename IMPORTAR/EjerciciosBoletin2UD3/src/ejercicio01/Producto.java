@@ -5,14 +5,15 @@ public class Producto {
 	private double precioFabrica;
 	private boolean fragil;
 	private int codigoProd;
-	private int precioCoste;
+	private double precioCoste;
+	
 	
 	
 	public Producto() {
 	}
 
 
-	public Producto(double precioFabrica, boolean fragil, int codigoProd, int precioCoste) {
+	public Producto(double precioFabrica, boolean fragil, int codigoProd, double precioCoste) {
 		this.precioFabrica = precioFabrica;
 		this.fragil = fragil;
 		this.codigoProd = codigoProd;
@@ -50,12 +51,12 @@ public class Producto {
 	}
 
 
-	public int getPrecioCoste() {
+	public double getPrecioCoste() {
 		return precioCoste;
 	}
 
 
-	public void setPrecioCoste(int precioCoste) {
+	public void setPrecioCoste(double precioCoste) {
 		this.precioCoste = precioCoste;
 	}
 
