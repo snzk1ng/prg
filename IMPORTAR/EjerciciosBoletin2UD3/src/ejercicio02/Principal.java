@@ -24,14 +24,16 @@
 			Boolean ocupado;
 			int contador=0;
 			
-			Habitacion h = new Habitacion();
+		
 			Habitacion[] habitacion;
-			Hotel ho = new Hotel();
+			Habitacion h; 
+			
 			
 			System.out.println("Bienvenidos al programa donde mostramos una habitacion en alquiler");
 			System.out.println("Cuantas habitaciones quiere contratar");
 			tam=Leer.datoInt();
-			habitacion= new Hotel (Hotel);
+			habitacion = new Habitacion [tam];
+			Hotel ho = new Hotel(habitacion);
 			do {
 				
 				System.out.println("""
@@ -49,17 +51,17 @@
 						
 						System.out.println("Diga el precio y el numero de dias contratados por favor");
 						precio=Leer.datoDouble();
-						h.setPrecio(precio);
+					
 						numeroDiasContratados=Leer.datoInt();
-						h.setNumeroDiasContratados(numeroDiasContratados);
+				
 						
 						System.out.println("Diga su nombre por favor");
 						nombreCliente=Leer.dato();
-						h.setNombreCliente(nombreCliente);
+						
 						
 						System.out.println("Diga el tipo de habitacion que quiere");
 						tipo=Leer.dato();
-						h.setTipo(tipo);
+					
 						
 						System.out.println("Pulse 1 si ha contratado servicios extras, 0 en caso de lo contrario");
 						servicios=Leer.datoInt();
@@ -69,8 +71,7 @@
 						else {
 							servicioExtra=false;
 						}
-						h.setServicioExtra(servicioExtra);
-						
+					
 						System.out.println("Pulse 1 si ha contratado servicios de limpieza, 0 en caso de lo contrario");
 						serviciosLimpieza=Leer.datoInt();
 						if(serviciosLimpieza==1) {
@@ -83,7 +84,6 @@
 					
 						}
 						
-						h.setServicioExtra(servicioExtra);
 						System.out.println("Pulse 1 si la habitacion esta activa, 0 en caso de lo contrario");
 						actividad=Leer.datoInt();
 						if(actividad==1) {
@@ -93,7 +93,7 @@
 							activa=false;
 						}
 						
-						h.setActiva(activa);
+						
 						
 						System.out.println("Pulse 1 si la habitacion esta ocupada, 0 en caso de lo contrario");
 						ocupacion=Leer.datoInt();
@@ -104,9 +104,12 @@
 							ocupado=false;
 						}
 					
-						h.setOcupado(ocupado);
-						ho.agregarProducto(h, contador);
+						
+						ho.agregarProducto(new Habitacion(precio,numeroDiasContratados,nombreCliente,tipo,servicioExtra,limpieza,activa,ocupado), contador);
 						contador++;
+						System.out.print(ho);
+						break;
+						
 					}
 				
 				

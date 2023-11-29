@@ -1,5 +1,7 @@
 package ejercicio02;
 
+import java.util.Arrays;
+
 public class Hotel {
 
 	
@@ -31,5 +33,15 @@ public class Hotel {
 		
 	}
 	
-	
+	public void mostrarLista(Habitacion h) {
+		
+		System.out.println(h);
+		
+	}
+
+
+	@Override
+	public String toString() {
+		return "Hotel [habitacion=" + Arrays.toString(habitacion) + "]";
+	}
 }

@@ -21,6 +21,8 @@ public class Principal {
 		Producto p = new Producto();
 		Tienda t = new Tienda();
 		
+		Producto
+		
 		
 		
 		System.out.println("Bienvenidos a la muestra de unos productos");
