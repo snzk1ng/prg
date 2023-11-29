@@ -44,6 +44,7 @@
 						-> 2.Para calcular el precio final segun el num de dias y servicios extras contratados
 						-> 3.Para mostrar factura
 						-> 0.Para salir
+						************************
 						""");
 					boton=Leer.datoInt();
 					switch(boton) {
