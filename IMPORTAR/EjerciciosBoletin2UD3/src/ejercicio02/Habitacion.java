@@ -96,9 +96,15 @@ public class Habitacion {
 
 	@Override
 	public String toString() {
-		return "Habitacion [precio=" + precio + ", numeroDiasContratados=" + numeroDiasContratados + ", nombreCliente="
-				+ nombreCliente + ", tipo=" + tipo + ", servicioExtra=" + servicioExtra + ", limpieza=" + limpieza
-				+ ", activa=" + activa + ", ocupado=" + ocupado + "]";
+		return "Habitacion \t"
+                + "\n-----------------"
+                + 
+                "\n Tipo habitación:" + tipo + 
+                "\n Precio:" + precio + 
+                "\n Nombre cliente: "+ nombreCliente 
+                + "\n Servicios extras:" + servicioExtra + 
+                "\n Días:" + numeroDiasContratados
+                + "\n Habitación ocupada:" + ocupado;
 	}
 	
 	

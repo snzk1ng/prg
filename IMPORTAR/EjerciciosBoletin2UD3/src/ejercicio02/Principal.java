@@ -26,7 +26,8 @@
 			
 		
 			Habitacion[] habitacion;
-			Habitacion h; 
+			Habitacion h;
+			
 			
 			
 			System.out.println("Bienvenidos al programa donde mostramos una habitacion en alquiler");
@@ -104,12 +105,13 @@
 							ocupado=false;
 						}
 					
-						
-						ho.agregarProducto(new Habitacion(precio,numeroDiasContratados,nombreCliente,tipo,servicioExtra,limpieza,activa,ocupado), contador);
+					h=new Habitacion(precio,numeroDiasContratados,nombreCliente,tipo,servicioExtra,limpieza,activa,ocupado);
+						ho.agregarProducto(h,contador);
 						contador++;
-						System.out.print(ho);
-						break;
 						
+						break;
+					case  2:
+						System.out.println(ho);
 					}
 				
 				
