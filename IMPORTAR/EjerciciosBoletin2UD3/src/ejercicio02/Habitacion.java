@@ -3,6 +3,7 @@ package ejercicio02;
 public class Habitacion {
 
 	
+	//
 	
 	private double precio;
 	private int numeroDiasContratados;
