@@ -23,7 +23,7 @@
 			Boolean activa;
 			Boolean ocupado;
 			int contador=0;
-			
+			int numeroHabitaciones=0;
 		
 			Habitacion[] habitacion;
 			Habitacion h;
@@ -107,13 +107,20 @@
 						}
 					
 					h=new Habitacion(precio,numeroDiasContratados,nombreCliente,tipo,servicioExtra,limpieza,activa,ocupado);
-						ho.agregarProducto(h,contador);
-						contador++;
+						ho.agregarProducto(h,numeroHabitaciones);
+						numeroHabitaciones++;
 						
 						break;
 					case  2:
-						System.out.println(ho);
+						ho.listarHabitaciones();
+						break;
+						
+					case 3:
+						ho.mostrarPrecioHabitacion(tam);
 					}
+					
+					
+					
 				
 				
 			}while(boton!=cero);

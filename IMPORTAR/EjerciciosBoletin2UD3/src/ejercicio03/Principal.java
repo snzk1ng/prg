@@ -76,7 +76,9 @@ public class Principal {
 				System.out.println(v);
 				break;
 				
-		
+			case 2:
+				
+				
 				
 			}
 		
